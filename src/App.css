@@ -145,8 +145,7 @@ div {
 /* HERE */
 
 .header {
-  /* color: rgb(163, 2, 2); */
-  color: blue;
+  color: rgb(163, 2, 2);
   position: fixed;
   top: 35px;
   left: 50px;
