@@ -479,10 +479,10 @@ div {
   min-height: 650px;
 }
 
-.signinPageBody {
+/* .signinPageBody {
   width: 100%;
   background-color: white;
-}
+} */
 
 .filtersBar {
   display: flex;
