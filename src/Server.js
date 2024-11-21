@@ -8,7 +8,7 @@ import jwt from "jsonwebtoken";
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:5173", // This is your local frontend URL
+  origin: "http://localhost:5173, https://idyllic-malasada-07cdd7.netlify.app", // This is your local frontend URL
   methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allow headers like Content-Type
 };
