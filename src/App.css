@@ -110,7 +110,22 @@ div {
     padding: 15px; /* Reduce padding for tablets */
   }
 
+  .header {
+    color: yellow;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
+      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+  }
+
   .bodyFormFlexbox {
+    width: 90%;
     padding: 15px; /* Adjust padding for smaller screens */
   }
 }
@@ -138,7 +153,22 @@ div {
     padding: 10px; /* Reduce padding for smaller screens */
   }
 
+  .header {
+    color: green;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
+      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+  }
+
   .bodyFormFlexbox {
+    width: 90%;
     padding: 10px; /* Reduce padding for small screens */
   }
 }
@@ -165,7 +195,22 @@ div {
     padding: 5px; /* Minimal padding for very small screens */
   }
 
+  .header {
+    color: green;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
+      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+  }
+
   .bodyFormFlexbox {
+    width: 90%;
     padding: 5px; /* Minimal padding for very small screens */
   }
 }
@@ -173,7 +218,7 @@ div {
 /* HERE */
 
 .header {
-  color: yellow;
+  color: green;
   position: fixed;
   top: 35px;
   left: 50px;
