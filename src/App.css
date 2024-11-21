@@ -323,6 +323,21 @@ div {
     margin-top: -300px;
     justify-content: center;
   }
+
+  .signinPageBody {
+    height: 100%;
+    width: 100%;
+    min-width: 450px;
+    min-height: 650px;
+    background-color: white;
+    color: white;
+    /* padding: 20px; */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }
 
 .loginForm {
@@ -652,21 +667,6 @@ div {
   align-self: start;
   position: relative;
   top: -10px;
-}
-
-.signinPageBody {
-  height: 100%;
-  width: 100%;
-  min-width: 450px;
-  min-height: 650px;
-  background-color: white;
-  color: white;
-  /* padding: 20px; */
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 .signupFlexbox {
