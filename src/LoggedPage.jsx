@@ -19,7 +19,9 @@ function LoggedPage(props) {
 
   const fetchAllUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/getUserInfo");
+      const response = await axios.get(
+        "https://task4-3-uprp.onrender.com/getUserInfo"
+      );
       setUsersInfo(response.data);
       console.log(`first user info: ${usersInfo[1]}`);
     } catch (err) {
@@ -30,9 +32,12 @@ function LoggedPage(props) {
 
   const fetchFilteredUsers = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/filter", {
-        filteredUsers: filteredUsers,
-      });
+      const response = await axios.post(
+        "https://task4-3-uprp.onrender.com/filter",
+        {
+          filteredUsers: filteredUsers,
+        }
+      );
       setUsersInfo(response.data);
     } catch (err) {
       setError("Error fetching users");
@@ -95,7 +100,9 @@ function LoggedPage(props) {
   useEffect(() => {
     const fetchAllUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/getUserInfo");
+        const response = await axios.get(
+          "https://task4-3-uprp.onrender.com/getUserInfo"
+        );
         setUsersInfo(response.data);
       } catch (err) {
         setError("Error fetching users");

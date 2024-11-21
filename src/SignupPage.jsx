@@ -25,12 +25,15 @@ function SignupPage(props) {
     console.log(`Input Password: ${inputPassword}`);
 
     try {
-      const response = await axios.post("http://localhost:5000/register", {
-        name: inputName,
-        role: inputRole,
-        email: inputEmail,
-        password: inputPassword,
-      });
+      const response = await axios.post(
+        "https://task4-3-uprp.onrender.com/register",
+        {
+          name: inputName,
+          role: inputRole,
+          email: inputEmail,
+          password: inputPassword,
+        }
+      );
 
       setUser(response.data);
       props.updateActiveUser(response.data.user);

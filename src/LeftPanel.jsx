@@ -19,10 +19,13 @@ function LeftPanel(props) {
     // Navigate to '/LoggedPage'
 
     try {
-      const response = await axios.post("http://localhost:5000/signIn", {
-        email: inputEmail,
-        password: inputPassword,
-      });
+      const response = await axios.post(
+        "https://task4-3-uprp.onrender.com/signIn",
+        {
+          email: inputEmail,
+          password: inputPassword,
+        }
+      );
 
       console.log(`response value in line 27: ${response.data.user.email}`);
       console.log(`token value in line 28: ${response.data.token}`);

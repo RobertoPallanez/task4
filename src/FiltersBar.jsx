@@ -18,7 +18,7 @@ function FiltersBar(props) {
   const handleBlock = async () => {
     try {
       const isActiveUserBlocked = await axios.post(
-        "http://localhost:5000/checkBlocked",
+        "https://task4-3-uprp.onrender.com/checkBlocked",
         {
           name: props.activeUser.name,
           role: props.activeUser.role,
@@ -30,7 +30,7 @@ function FiltersBar(props) {
       console.log("frontend: is active user blocked? " + blockedStatus);
       // Send the checked IDs to the backend to update the "blocked" column in the database
       if (blockedStatus == false) {
-        const response = await axios.post("http://localhost:5000/block", {
+        const response = await axios.post("https://task4-3-uprp.onrender.com/block", {
           ids: props.checkedRows,
         });
 
@@ -50,7 +50,7 @@ function FiltersBar(props) {
   const handleUnblock = async () => {
     try {
       const isActiveUserBlocked = await axios.post(
-        "http://localhost:5000/checkBlocked",
+        "https://task4-3-uprp.onrender.com/checkBlocked",
         {
           name: props.activeUser.name,
           role: props.activeUser.role,
@@ -62,7 +62,7 @@ function FiltersBar(props) {
       console.log("frontend: is active user blocked? " + blockedStatus);
       // Send the checked IDs to the backend to update the "blocked" column in the database
       if (blockedStatus == false) {
-        const response = await axios.post("http://localhost:5000/unblock", {
+        const response = await axios.post("https://task4-3-uprp.onrender.com/unblock", {
           ids: props.checkedRows,
         });
 
@@ -81,7 +81,7 @@ function FiltersBar(props) {
   const handleDelete = async () => {
     try {
       const isActiveUserBlocked = await axios.post(
-        "http://localhost:5000/checkBlocked",
+        "https://task4-3-uprp.onrender.com/checkBlocked",
         {
           name: props.activeUser.name,
           role: props.activeUser.role,
@@ -93,7 +93,7 @@ function FiltersBar(props) {
       console.log("frontend: is active user blocked? " + blockedStatus);
       // Send the checked IDs to the backend to update the "blocked" column in the database
       if (blockedStatus == false) {
-        const response = await axios.post("http://localhost:5000/delete", {
+        const response = await axios.post("https://task4-3-uprp.onrender.com/delete", {
           ids: props.checkedRows,
         });
 
