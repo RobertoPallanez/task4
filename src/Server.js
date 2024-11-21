@@ -7,8 +7,16 @@ import jwt from "jsonwebtoken";
 
 const app = express();
 
+const corsOptions = {
+  origin: "http://localhost:5173", // This is your local frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary HTTP methods
+  allowedHeaders: ["Content-Type", "Authorization"], // Allow headers like Content-Type
+};
+
+app.use(cors(corsOptions));
+
 // Enable CORS for all origins (allows any domain to access your API)
-app.use(cors());
+// app.use(cors());
 
 // PostgreSQL client setup
 const db = new pg.Client({
