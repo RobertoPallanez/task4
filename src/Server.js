@@ -1,7 +1,7 @@
 import express from "express";
 import pg from "pg";
 import cors from "cors"; // Import the cors package
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { formatDistanceToNow } from "date-fns";
 import jwt from "jsonwebtoken";
 
