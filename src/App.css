@@ -44,11 +44,12 @@ div {
   left: 50px;
   font-family: "Host Grotesk", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 750;
+  font-weight: bold;
   font-style: normal;
   font-size: 3rem;
   margin-bottom: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
+    0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
   padding: 20px;
 }
 
