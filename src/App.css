@@ -92,6 +92,14 @@ div {
 
 /* Tablet layout */
 @media (max-width: 1024px) {
+  html,
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
   div {
     width: 80%; /* Increase width for tablet screens */
   }
@@ -108,6 +116,15 @@ div {
 
 /* Mobile layout (portrait) */
 @media (max-width: 768px) {
+  /* Ensure body and html take up the full height */
+  html,
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
   div {
     width: 100%; /* Full width for smaller screens */
     height: auto; /* Allow height to adjust based on content */
@@ -126,6 +143,14 @@ div {
 
 /* Small mobile layout (very small phones) */
 @media (max-width: 480px) {
+  html,
+  body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
   div {
     width: 100%;
     height: auto;
