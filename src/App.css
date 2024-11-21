@@ -16,6 +16,25 @@ div {
   height: 100vh;
 }
 
+@media (max-width: 1024px) {
+  .leftPanel {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftPanel {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftPanel {
+    padding: 10px;
+  }
+}
+
 .leftPanel {
   height: 100%;
   width: 100%;
