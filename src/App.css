@@ -111,7 +111,7 @@ div {
   }
 
   .header {
-    color: yellow;
+    color: black;
     font-family: "Host Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -153,7 +153,7 @@ div {
   }
 
   .header {
-    color: purple;
+    color: black;
     font-family: "Host Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -195,7 +195,7 @@ div {
   }
 
   .header {
-    color: purple;
+    color: black;
     font-family: "Host Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
@@ -217,7 +217,7 @@ div {
 /* HERE */
 
 .header {
-  color: green;
+  color: black;
   position: fixed;
   top: 35px;
   left: 50px;
