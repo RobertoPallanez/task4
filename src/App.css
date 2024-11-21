@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   div {
     width: 80%;
     height: 100vh;
@@ -46,7 +46,7 @@ div {
   min-height: 650px;
   background-color: white;
   color: white;
-  /* padding: 20px; */
+  padding: 20px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,91 @@ div {
   background-color: white;
   height: fit-content;
   width: 100%;
+} */
+
+/* HERE */
+
+div {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
 }
+
+.leftPanel {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+  min-height: 650px;
+  background-color: white;
+  color: black; /* Keep the text black */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.bodyFormFlexbox {
+  background-color: white;
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Make sure padding is included in width */
+}
+
+/* Tablet layout */
+@media (max-width: 1024px) {
+  div {
+    width: 80%; /* Increase width for tablet screens */
+  }
+
+  .leftPanel {
+    min-width: 350px; /* Adjust minimum width */
+    padding: 15px; /* Reduce padding for tablets */
+  }
+
+  .bodyFormFlexbox {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Mobile layout (portrait) */
+@media (max-width: 768px) {
+  div {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .leftPanel {
+    min-width: 100%; /* Allow the leftPanel to occupy full width */
+    min-height: auto; /* Let the height be flexible */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .bodyFormFlexbox {
+    padding: 10px; /* Reduce padding for small screens */
+  }
+}
+
+/* Small mobile layout (very small phones) */
+@media (max-width: 480px) {
+  div {
+    width: 100%;
+    height: auto;
+  }
+
+  .leftPanel {
+    min-width: 100%; /* Full width */
+    min-height: auto; /* Flexible height */
+    padding: 5px; /* Minimal padding for very small screens */
+  }
+
+  .bodyFormFlexbox {
+    padding: 5px; /* Minimal padding for very small screens */
+  }
+}
+
+/* HERE */
 
 .header {
   color: rgb(163, 2, 2);
