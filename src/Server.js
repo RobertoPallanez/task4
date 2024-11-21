@@ -12,11 +12,11 @@ app.use(cors());
 
 // PostgreSQL client setup
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "loginWebApp",
-  password: "newyork123",
-  port: 5432,
+  connectionString:
+    "postgresql://robertopallanez:OMazSSR1FV6HW3ZbQaZnHyFC2HVkT7uq@dpg-csvlctdumphs73eegm60-a.oregon-postgres.render.com/loginwebapp",
+  ssl: {
+    rejectUnauthorized: false, // Important for allowing SSL connections
+  },
 });
 db.connect();
 
