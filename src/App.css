@@ -178,9 +178,6 @@ div {
     width: 100%;
     height: fit-content;
   }
-
-  .signupForm p {
-  }
 }
 
 @media (max-width: 768px) {
@@ -285,6 +282,50 @@ div {
     width: 90%; /* Adjust width as needed */
     max-width: 500px; /* Control the maximum width */
     justify-self: center; /* This isn't necessary with flexbox centering */
+  }
+
+  .dataList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: grid;
+    grid-template-columns: 30px 0.85fr 1.25fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .itemList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.75rem;
+    display: grid;
+    grid-template-columns: 30px 0.85fr 1.25fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
   }
 }
 
@@ -401,6 +442,29 @@ div {
     display: flex;
     gap: 10px;
     padding: 10px;
+  }
+
+  .dataList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.85rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px 0.85fr 1.25fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
   }
 
   .itemList {
