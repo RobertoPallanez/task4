@@ -128,6 +128,7 @@ div {
       0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
   }
@@ -179,7 +180,15 @@ div {
     padding: 0;
   }
 
-  .header {
+  .signinPageBody {
+    min-width: 100%; /* Allow the leftPanel to occupy full width */
+    min-height: auto; /* Let the height be flexible */
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .leftPanel > .header {
     color: darkred;
     font-family: "Host Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -192,11 +201,36 @@ div {
       0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .signupPage > .header {
+    color: darkred;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
+      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
   }
 
   .bodyFormFlexbox {
+    width: 100%;
+    justify-self: center;
+    margin: 0;
+  }
+
+  .signupFlexbox {
     width: 100%;
     justify-self: center;
     margin: 0;
@@ -239,7 +273,14 @@ div {
     justify-content: center;
   }
 
-  .header {
+  .signinPageBody {
+    min-width: 100%; /* Full width */
+    min-height: auto; /* Flexible height */
+    display: flex;
+    justify-content: center;
+  }
+
+  .leftPanel > .header {
     color: darkred;
     font-family: "Host Grotesk", sans-serif;
     font-optical-sizing: auto;
@@ -252,6 +293,27 @@ div {
       0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30px;
+  }
+
+  .signinPageBody > .header {
+    color: darkred;
+    font-family: "Host Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
+      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -265,36 +327,33 @@ div {
     margin: 0; /* Minimal padding for very small screens */
   }
 
-  .signinPageBody {
-    display: flex;
-    justify-content: center;
-    margin-left: 0;
-    padding-left: 0;
-    background-color: black;
+  /* .signupFlexbox {
     width: 100%;
-    height: 100%;
-  }
+    background-color: white;
+    justify-self: center;
+    margin: 0; /* Minimal padding for very small screens */
+  /* } */
 
-  .signinPageBody > .header {
+  /* .signinPageBody > .header {
     position: relative;
     left: -20px;
     top: -50px;
     width: 100%;
-  }
+  } */
 
   .signinPageBody > .signupFlexbox {
-    display: flex;
-    padding: 0;
-    margin: 0;
     width: 100%;
+    background-color: white;
+    justify-self: center;
+    margin: 0; /* Minimal padding for very small screens */
   }
 
-  .signinPageBody > .signupFlexbox > .signupForm {
+  /* .signinPageBody > .signupFlexbox > .signupForm {
     width: fit-content;
     justify-self: center;
     margin-left: -40px;
     padding: 0;
-  }
+  } */
 
   .loggedPageBody {
     width: 100%;
@@ -318,6 +377,7 @@ div {
     padding: 20px;
     display: flex;
     width: 100%;
+    height: fit-content;
     padding: 0;
     margin: 0;
     margin-top: -300px;
