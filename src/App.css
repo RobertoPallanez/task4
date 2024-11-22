@@ -330,10 +330,9 @@ div {
 
   /* .signupFlexbox {
     width: 100%;
-    background-color: white;
-    justify-self: center;
-    margin: 0; /* Minimal padding for very small screens */
-  /* } */
+    display: flex;
+    justify-content: center;
+  } */
 
   /* .signinPageBody > .header {
     position: relative;
@@ -344,9 +343,8 @@ div {
 
   .signinPageBody > .signupFlexbox {
     width: 100%;
-    background-color: white;
-    justify-self: center;
-    margin: 0; /* Minimal padding for very small screens */
+    display: flex;
+    justify-content: center;
   }
 
   /* .signinPageBody > .signupFlexbox > .signupForm {
