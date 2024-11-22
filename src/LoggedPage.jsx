@@ -129,6 +129,7 @@ function LoggedPage(props) {
         handleSearchbarChange={handleSearchbarChange}
       />
       <ListRow />
+      {/* <ItemRow /> */}
       {usersInfo.map((user) => (
         <ItemRow
           id={user.id}

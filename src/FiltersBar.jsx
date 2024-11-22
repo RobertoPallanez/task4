@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 function FiltersBar(props) {
-  //   const [filteredUsers, setFilteredUsers] = useState("");
+  const [filteredUsers, setFilteredUsers] = useState("");
   if (props.activeUser.name == undefined) {
     props.handleNavigateBack();
   }
@@ -30,9 +30,12 @@ function FiltersBar(props) {
       console.log("frontend: is active user blocked? " + blockedStatus);
       // Send the checked IDs to the backend to update the "blocked" column in the database
       if (blockedStatus == false) {
-        const response = await axios.post("https://task4-3-uprp.onrender.com/block", {
-          ids: props.checkedRows,
-        });
+        const response = await axios.post(
+          "https://task4-3-uprp.onrender.com/block",
+          {
+            ids: props.checkedRows,
+          }
+        );
 
         // Log the response
         console.log(response.data);
@@ -62,9 +65,12 @@ function FiltersBar(props) {
       console.log("frontend: is active user blocked? " + blockedStatus);
       // Send the checked IDs to the backend to update the "blocked" column in the database
       if (blockedStatus == false) {
-        const response = await axios.post("https://task4-3-uprp.onrender.com/unblock", {
-          ids: props.checkedRows,
-        });
+        const response = await axios.post(
+          "https://task4-3-uprp.onrender.com/unblock",
+          {
+            ids: props.checkedRows,
+          }
+        );
 
         // Log the response
         console.log(response.data);
@@ -93,9 +99,12 @@ function FiltersBar(props) {
       console.log("frontend: is active user blocked? " + blockedStatus);
       // Send the checked IDs to the backend to update the "blocked" column in the database
       if (blockedStatus == false) {
-        const response = await axios.post("https://task4-3-uprp.onrender.com/delete", {
-          ids: props.checkedRows,
-        });
+        const response = await axios.post(
+          "https://task4-3-uprp.onrender.com/delete",
+          {
+            ids: props.checkedRows,
+          }
+        );
 
         // Log the response
         console.log(response.data);

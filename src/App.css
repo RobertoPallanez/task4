@@ -104,7 +104,13 @@ div {
   }
 
   div {
-    width: 80%; /* Increase width for tablet screens */
+    width: 50%; /* Increase width for tablet screens */
+  }
+
+  .itemList input {
+    align-self: start;
+    position: relative;
+    top: -8px;
   }
 
   .leftPanel {
@@ -131,6 +137,25 @@ div {
     height: fit-content;
     display: flex;
     justify-content: center;
+    height: fit-content;
+    background-color: white;
+  }
+
+  .filtersBar {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 90%;
+    /* min-width: 100%; */
+    background-color: rgb(242, 242, 245);
+    opacity: 75%;
+    /* position: relative;
+    top: 400px; */
+    box-sizing: border-box;
+    margin: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
   }
 
   .bodyFormFlexbox {
@@ -140,13 +165,72 @@ div {
     margin: 0; /* Adjust padding for smaller screens */
   }
 
-  /* .loggedPageBody {
+  #root {
+    width: 100%;
+    background-color: white;
+  }
+
+  .loggedPageBody {
     width: 100%;
     height: 100%;
-    justify-content: center;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     background-color: white;
-  } */
+  }
+
+  .dataList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.85rem;
+    /* position: relative;
+    top: 410px; */
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    /* max-width: 85%;
+    min-width: none; */
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .itemList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.75rem;
+    /* position: relative;
+    top: 410px; */
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    /* max-width: 85%;
+    min-width: none; */
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
+  }
 }
 
 /* Mobile layout (portrait) */
@@ -162,10 +246,11 @@ div {
   }
 
   div {
-    width: 100%; /* Full width for smaller screens */
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0; /* Allow height to adjust based on content */
+    padding: 0;
+    background-color: white;
   }
 
   .leftPanel {
@@ -174,6 +259,11 @@ div {
     display: flex;
     justify-content: center;
     padding: 0;
+  }
+
+  .loggedPageBody {
+    background-color: white;
+    height: 100%;
   }
 
   .signinPageBody {
@@ -226,12 +316,6 @@ div {
     margin: 0;
   }
 
-  /* .signupFlexbox {
-    width: 100%;
-    justify-self: center;
-    margin: 0;
-  } */
-
   .signupFlexbox {
     position: relative;
     background-color: white;
@@ -254,16 +338,6 @@ div {
     max-width: 500px; /* Control the maximum width */
     justify-self: center; /* This isn't necessary with flexbox centering */
   }
-
-  /* .signupForm {
-    width: 90%;
-  } */
-
-  /* .loggedPageBody {
-    width: 100%;
-    max-width: 1000px;
-    background-color: white;
-  } */
 }
 
 /* Small mobile layout (very small phones) */
@@ -375,7 +449,9 @@ div {
   /* Mobile (Tablet Portrait or Large Phones) */
   .loggedPageBody {
     width: 100%; /* Full width for mobile screens */
-    padding: 10px;
+    height: 100%;
+    /* padding: 10px; */
+    background-color: white;
   }
 
   .header {
@@ -385,15 +461,15 @@ div {
 
   .filtersBar {
     display: flex;
-    flex-direction: column; /* Stack filters vertically */
+    /* flex-direction: column; */
     gap: 10px;
     padding: 10px;
   }
 
-  .dataList,
+  /* .dataList,
   .itemList {
     width: 100%; /* Full width for mobile */
-  }
+  /* } */
 
   /* NEW */
 
@@ -402,6 +478,39 @@ div {
     max-width: 1000px;
     background-color: white;
   } */
+
+  .itemList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.5rem;
+    /* position: relative;
+    top: 410px;
+    left: 0px; */
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    /* max-width: 85%;
+    min-width: none; */
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .itemList input {
+    align-self: start;
+    position: relative;
+    top: -3px;
+  }
 }
 
 /* HERE */
@@ -426,6 +535,10 @@ div {
     justify-content: center;
   }
 
+  #root {
+    background-color: white;
+  }
+
   .signinPageBody {
     height: 100%;
     width: 100%;
@@ -443,44 +556,98 @@ div {
 
   /* NEW */
   .loggedPageBody {
-    display: block;
-    width: 100%;
-    max-width: 1000px; /* Restrict to max width of 1000px */
+    display: flex;
+    height: 100%;
+    width: 100%; /* Restrict to max width of 1000px */
     margin: 0 auto;
+    background-color: white;
+    position: relative;
+    left: 0px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .filtersBar {
     display: flex;
-    justify-content: flex-start; /* Align filters bar to the left */
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .dataList,
-  .itemList {
-    display: flex;
     flex-wrap: wrap;
+    height: fit-content;
+    width: 90%;
+    background-color: rgb(242, 242, 245);
+    opacity: 75%;
+    position: relative;
+    top: 400px;
+    box-sizing: border-box;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    border-radius: 5px;
   }
 
   /* Adjust child elements to be in a more spacious layout on desktop */
   .header {
     font-size: 2.5rem;
+    color: darkred;
+    position: relative;
+    top: 350px;
   }
 
-  .filtersBar {
-    flex-wrap: nowrap;
+  .dataList {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.85rem;
+    position: relative;
+    top: 410px;
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    /* max-width: 85%;
+    min-width: none; */
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
   }
 
-  .dataList,
   .itemList {
-    width: calc(
-      50% - 10px
-    ); /* Split the data list and item list into 2 columns */
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 0.65rem;
+    position: relative;
+    top: 410px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 0.65fr;
+    list-style: none;
+    height: fit-content;
+    width: 90%;
+    /* max-width: 85%;
+    min-width: none; */
+    opacity: 75%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(202, 201, 201);
+    margin-top: 5px;
+    padding-bottom: 0;
   }
 
-  /* NEW */
+  .itemList input {
+    align-self: start;
+    position: relative;
+    top: -8px;
+  }
 }
 
 .loginForm {
@@ -535,55 +702,6 @@ div {
   padding-left: 10px;
 }
 
-/* .password-input {
-  width: 250px;
-  padding: 10px;
-  padding-right: 40px;
-  position: relative;
-} */
-
-/* .password-input::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
-} */
-
-/* .password-input.show-password::after {
-  content: "\f06e";
-} */
-
-/* .password-input.hide-password::after {
-  content: "\f070";
-} */
-/* .passwordForLoginHide {
-  width: 300px;
-  height: 40px;
-  margin-bottom: 10px;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(209, 208, 208);
-  outline: none;
-  color: black;
-  padding-left: 10px;
-  content: "\f06e";
-}
-
-.passwordForLoginShow {
-  width: 300px;
-  height: 40px;
-  margin-bottom: 10px;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(209, 208, 208);
-  outline: none;
-  color: black;
-  padding-left: 10px;
-  content: "\f070";
-} */
-
 .inputForLogin:active {
   text-decoration: none;
   outline: none;
@@ -613,38 +731,6 @@ div {
   background-color: black;
   width: 100px;
   height: 100px;
-}
-
-/* .loggedPageBody {
-  width: 100%;
-  background-color: white;
-  min-width: 650px;
-  min-height: 650px;
-} */
-
-/* .signinPageBody {
-  width: 100%;
-  background-color: white;
-} */
-
-.filtersBar {
-  display: flex;
-  flex-wrap: wrap;
-  height: fit-content;
-  width: 100%;
-  max-width: 85%; /* Max width of 900px */
-  min-width: none;
-  background-color: rgb(242, 242, 245);
-  opacity: 75%;
-  position: relative;
-  top: 160px;
-  left: 30px; /* Space from the left edge */
-  padding-left: 5px;
-  box-sizing: border-box; /* Ensures padding is inside the width, not outside */
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px;
-  border-radius: 5px;
 }
 
 .buttonsList {
@@ -740,61 +826,6 @@ div {
   margin-right: 3px;
 }
 
-.dataList {
-  background-color: white;
-  color: black;
-  font-weight: 700;
-  font-size: 0.85rem;
-  position: relative;
-  top: 160px;
-  left: 30px;
-  display: grid;
-  grid-template-columns: 30px 1fr 1fr 0.65fr;
-  list-style: none;
-  height: fit-content;
-  width: 100%;
-  max-width: 85%; /* Max width of 900px */
-  min-width: none;
-  opacity: 75%;
-  padding-left: 5px;
-  box-sizing: border-box; /* Ensures padding is inside the width, not outside */
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 0.5px solid rgb(202, 201, 201);
-  margin-top: 5px;
-  padding-bottom: 0;
-}
-
-.itemList {
-  background-color: white;
-  color: black;
-  font-weight: 500;
-  font-size: 0.85rem;
-  position: relative;
-  top: 160px;
-  left: 30px;
-  display: grid;
-  grid-template-columns: 30px 1fr 1fr 0.65fr;
-  list-style: none;
-  height: fit-content;
-  width: 100%;
-  max-width: 85%; /* Max width of 900px */
-  min-width: none;
-  opacity: 75%;
-  padding-left: 5px;
-  box-sizing: border-box; /* Ensures padding is inside the width, not outside */
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px;
-  margin-top: 5px;
-  margin-right: 5px;
-  padding-top: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: 0.5px solid rgb(202, 201, 201);
-}
-
 .nameDataList {
   list-style: none;
   padding: 0;
@@ -806,11 +837,11 @@ div {
   margin: 0;
 }
 
-.itemList input {
+/* .itemList input {
   align-self: start;
   position: relative;
   top: -10px;
-}
+} */
 
 .signupFlexbox {
   position: relative;
