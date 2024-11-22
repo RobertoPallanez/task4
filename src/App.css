@@ -140,17 +140,13 @@ div {
     margin: 0; /* Adjust padding for smaller screens */
   }
 
-  /* .signupForm {
-    width: 90%;
-  } */
-
-  .loggedPageBody {
+  /* .loggedPageBody {
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: start;
     background-color: white;
-  }
+  } */
 }
 
 /* Mobile layout (portrait) */
@@ -263,11 +259,11 @@ div {
     width: 90%;
   } */
 
-  .loggedPageBody {
+  /* .loggedPageBody {
     width: 100%;
     max-width: 1000px;
     background-color: white;
-  }
+  } */
 }
 
 /* Small mobile layout (very small phones) */
@@ -374,17 +370,38 @@ div {
     justify-self: center; /* This isn't necessary with flexbox centering */
   }
 
-  /* .signinPageBody > .signupFlexbox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  } */
+  /* NEW */
 
+  /* Mobile (Tablet Portrait or Large Phones) */
   .loggedPageBody {
+    width: 100%; /* Full width for mobile screens */
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .filtersBar {
+    display: flex;
+    flex-direction: column; /* Stack filters vertically */
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .dataList,
+  .itemList {
+    width: 100%; /* Full width for mobile */
+  }
+
+  /* NEW */
+
+  /* .loggedPageBody {
     width: 100%;
     max-width: 1000px;
     background-color: white;
-  }
+  } */
 }
 
 /* HERE */
@@ -423,6 +440,47 @@ div {
     justify-content: center;
     align-content: center;
   }
+
+  /* NEW */
+  .loggedPageBody {
+    display: block;
+    width: 100%;
+    max-width: 1000px; /* Restrict to max width of 1000px */
+    margin: 0 auto;
+  }
+
+  .filtersBar {
+    display: flex;
+    justify-content: flex-start; /* Align filters bar to the left */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .dataList,
+  .itemList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Adjust child elements to be in a more spacious layout on desktop */
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .filtersBar {
+    flex-wrap: nowrap;
+  }
+
+  .dataList,
+  .itemList {
+    width: calc(
+      50% - 10px
+    ); /* Split the data list and item list into 2 columns */
+  }
+
+  /* NEW */
 }
 
 .loginForm {
@@ -557,12 +615,12 @@ div {
   height: 100px;
 }
 
-.loggedPageBody {
+/* .loggedPageBody {
   width: 100%;
   background-color: white;
   min-width: 650px;
   min-height: 650px;
-}
+} */
 
 /* .signinPageBody {
   width: 100%;
