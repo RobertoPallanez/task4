@@ -1,67 +1,14 @@
-/* Ensure body and html take up the full height */
 html,
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  /* background-color: rgb(223, 32, 32); */
   background-image: url(https://wallpapercave.com/wp/wp9015071.jpg);
   background-size: cover; /* Make sure the image covers the entire screen */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
 }
 
-/* @media (max-width: 1024px) {
-  div {
-    width: 80%;
-    height: 100vh;
-  }
-}
-
-@media (max-width: 768px) {
-  div {
-    width: 100%;
-    padding: 15px;
-    height: 100vh;
-  }
-}
-
-@media (max-width: 480px) {
-  div {
-    width: 90%;
-    padding: 15px;
-    height: 100vh;
-  }
-}
-
-div {
-  width: 50%;
-  height: 100vh;
-}
-
-.leftPanel {
-  height: 100%;
-  width: 100%;
-  min-width: 400px;
-  min-height: 650px;
-  background-color: white;
-  color: white;
-  padding: 20px;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.bodyFormFlexbox {
-  background-color: white;
-  height: fit-content;
-  width: 100%;
-} */
-
-/* HERE */
-
 div {
   width: 50%;
   height: 100vh;
@@ -76,7 +23,6 @@ div {
   min-height: 650px;
   background-color: white;
   color: white;
-  /* padding: 20px; */
   color: black;
   display: flex;
   flex-direction: column;
@@ -89,10 +35,9 @@ div {
   height: fit-content;
   width: 100%;
   padding: 20px;
-  box-sizing: border-box; /* Make sure padding is included in width */
+  box-sizing: border-box;
 }
 
-/* Tablet layout */
 @media (max-width: 1024px) {
   html,
   body {
@@ -104,7 +49,7 @@ div {
   }
 
   div {
-    width: 50%; /* Increase width for tablet screens */
+    width: 50%;
   }
 
   .itemList input {
@@ -114,7 +59,7 @@ div {
   }
 
   .leftPanel {
-    min-width: 350px; /* Adjust minimum width */
+    min-width: 350px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -130,8 +75,8 @@ div {
     font-size: 3rem;
     margin-bottom: 0;
     margin-left: 0;
-    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
-      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 1px rgba(128, 6, 6, 0.781),
+      0 0 5px rgba(100, 10, 10, 0.6), 0 0 1px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
     height: fit-content;
@@ -146,11 +91,8 @@ div {
     flex-wrap: wrap;
     height: fit-content;
     width: 90%;
-    /* min-width: 100%; */
     background-color: rgb(242, 242, 245);
     opacity: 75%;
-    /* position: relative;
-    top: 400px; */
     box-sizing: border-box;
     margin: 5px;
     justify-content: space-between;
@@ -162,7 +104,7 @@ div {
     width: 100%;
     background-color: white;
     justify-self: center;
-    margin: 0; /* Adjust padding for smaller screens */
+    margin: 0;
   }
 
   #root {
@@ -185,15 +127,11 @@ div {
     color: black;
     font-weight: 700;
     font-size: 0.85rem;
-    /* position: relative;
-    top: 410px; */
     display: grid;
     grid-template-columns: 30px 1fr 1fr 0.65fr;
     list-style: none;
     height: fit-content;
     width: 90%;
-    /* max-width: 85%;
-    min-width: none; */
     opacity: 75%;
     padding-left: 5px;
     box-sizing: border-box;
@@ -211,15 +149,11 @@ div {
     color: black;
     font-weight: 700;
     font-size: 0.75rem;
-    /* position: relative;
-    top: 410px; */
     display: grid;
     grid-template-columns: 30px 1fr 1fr 0.65fr;
     list-style: none;
     height: fit-content;
     width: 90%;
-    /* max-width: 85%;
-    min-width: none; */
     opacity: 75%;
     padding-left: 5px;
     box-sizing: border-box;
@@ -233,9 +167,7 @@ div {
   }
 }
 
-/* Mobile layout (portrait) */
 @media (max-width: 768px) {
-  /* Ensure body and html take up the full height */
   html,
   body {
     height: 100vh;
@@ -283,8 +215,8 @@ div {
     font-size: 3rem;
     margin-bottom: 0;
     margin-left: 0;
-    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
-      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 1px rgba(128, 6, 6, 0.781),
+      0 0 5px rgba(100, 10, 10, 0.6), 0 0 1px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
     height: fit-content;
@@ -301,8 +233,8 @@ div {
     font-size: 3rem;
     margin-bottom: 0;
     margin-left: 0;
-    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
-      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 1px rgba(128, 6, 6, 0.781),
+      0 0 5px rgba(100, 10, 10, 0.6), 0 0 1px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
     height: fit-content;
@@ -340,7 +272,6 @@ div {
   }
 }
 
-/* Small mobile layout (very small phones) */
 @media (max-width: 480px) {
   html,
   body {
@@ -383,8 +314,8 @@ div {
     font-size: 3rem;
     margin-bottom: 0;
     margin-left: 0;
-    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
-      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 1px rgba(128, 6, 6, 0.781),
+      0 0 5px rgba(100, 10, 10, 0.6), 0 0 1px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
     height: fit-content;
@@ -403,8 +334,8 @@ div {
     font-size: 3rem;
     margin-bottom: 0;
     margin-left: 0;
-    text-shadow: 1px 1px 3px rgba(128, 6, 6, 0.781),
-      0 0 10px rgba(100, 10, 10, 0.6), 0 0 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 1px rgba(128, 6, 6, 0.781),
+      0 0 5px rgba(100, 10, 10, 0.6), 0 0 1px rgba(0, 0, 0, 0.7);
     text-align: center;
     width: 100%;
     height: fit-content;
@@ -444,56 +375,28 @@ div {
     justify-self: center; /* This isn't necessary with flexbox centering */
   }
 
-  /* NEW */
-
-  /* Mobile (Tablet Portrait or Large Phones) */
   .loggedPageBody {
     width: 100%; /* Full width for mobile screens */
     height: 100%;
-    /* padding: 10px; */
     background-color: white;
-  }
-
-  .header {
-    font-size: 1.5rem;
-    padding: 10px;
   }
 
   .filtersBar {
     display: flex;
-    /* flex-direction: column; */
     gap: 10px;
     padding: 10px;
   }
-
-  /* .dataList,
-  .itemList {
-    width: 100%; /* Full width for mobile */
-  /* } */
-
-  /* NEW */
-
-  /* .loggedPageBody {
-    width: 100%;
-    max-width: 1000px;
-    background-color: white;
-  } */
 
   .itemList {
     background-color: white;
     color: black;
     font-weight: 700;
     font-size: 0.5rem;
-    /* position: relative;
-    top: 410px;
-    left: 0px; */
     display: grid;
     grid-template-columns: 30px 1fr 1fr 0.65fr;
     list-style: none;
     height: fit-content;
     width: 90%;
-    /* max-width: 85%;
-    min-width: none; */
     opacity: 75%;
     padding-left: 5px;
     box-sizing: border-box;
@@ -513,7 +416,6 @@ div {
   }
 }
 
-/* HERE */
 @media (min-width: 1025px) {
   .header {
     color: darkred;
@@ -545,8 +447,6 @@ div {
     min-width: 450px;
     min-height: 650px;
     background-color: white;
-    color: white;
-    /* padding: 20px; */
     color: black;
     display: flex;
     flex-direction: column;
@@ -554,7 +454,6 @@ div {
     align-content: center;
   }
 
-  /* NEW */
   .loggedPageBody {
     display: flex;
     height: 100%;
@@ -582,14 +481,6 @@ div {
     border-radius: 5px;
   }
 
-  /* Adjust child elements to be in a more spacious layout on desktop */
-  .header {
-    font-size: 2.5rem;
-    color: darkred;
-    position: relative;
-    top: 350px;
-  }
-
   .dataList {
     background-color: white;
     color: black;
@@ -598,12 +489,10 @@ div {
     position: relative;
     top: 410px;
     display: grid;
-    grid-template-columns: 30px 1fr 1fr 0.65fr;
+    grid-template-columns: 30px 0.85fr 1.25fr 0.65fr;
     list-style: none;
     height: fit-content;
     width: 90%;
-    /* max-width: 85%;
-    min-width: none; */
     opacity: 75%;
     padding-left: 5px;
     box-sizing: border-box;
@@ -620,7 +509,7 @@ div {
     background-color: white;
     color: black;
     font-weight: 700;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     position: relative;
     top: 410px;
     left: 0px;
@@ -629,8 +518,6 @@ div {
     list-style: none;
     height: fit-content;
     width: 90%;
-    /* max-width: 85%;
-    min-width: none; */
     opacity: 75%;
     padding-left: 5px;
     box-sizing: border-box;
@@ -837,16 +724,8 @@ div {
   margin: 0;
 }
 
-/* .itemList input {
-  align-self: start;
-  position: relative;
-  top: -10px;
-} */
-
 .signupFlexbox {
   position: relative;
-  /* top: 213px; */
-  /* top: 490px; */
   background-color: white;
   height: fit-content;
   width: 100%;
