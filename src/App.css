@@ -277,6 +277,7 @@ div {
     min-width: 100%; /* Full width */
     min-height: auto; /* Flexible height */
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
