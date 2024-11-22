@@ -230,10 +230,33 @@ div {
     margin: 0;
   }
 
-  .signupFlexbox {
+  /* .signupFlexbox {
     width: 100%;
     justify-self: center;
     margin: 0;
+  } */
+
+  .signupFlexbox {
+    position: relative;
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    color: black;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this to center horizontally */
+  }
+
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: fit-content;
+    width: 90%; /* Adjust width as needed */
+    max-width: 500px; /* Control the maximum width */
+    justify-self: center; /* This isn't necessary with flexbox centering */
   }
 
   /* .signupForm {
@@ -328,30 +351,33 @@ div {
     margin: 0; /* Minimal padding for very small screens */
   }
 
-  /* .signupFlexbox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  } */
-
-  /* .signinPageBody > .header {
+  .signupFlexbox {
     position: relative;
-    left: -20px;
-    top: -50px;
+    background-color: white;
+    height: fit-content;
     width: 100%;
-  } */
-
-  .signinPageBody > .signupFlexbox {
-    width: 100%;
+    color: black;
+    padding-top: 1px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center; /* Add this to center horizontally */
   }
 
-  /* .signinPageBody > .signupFlexbox > .signupForm {
-    width: fit-content;
-    justify-self: center;
-    margin-left: -40px;
-    padding: 0;
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: fit-content;
+    width: 90%; /* Adjust width as needed */
+    max-width: 500px; /* Control the maximum width */
+    justify-self: center; /* This isn't necessary with flexbox centering */
+  }
+
+  /* .signinPageBody > .signupFlexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   } */
 
   .loggedPageBody {
