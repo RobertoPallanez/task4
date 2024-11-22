@@ -140,9 +140,9 @@ div {
     margin: 0; /* Adjust padding for smaller screens */
   }
 
-  .signupForm {
+  /* .signupForm {
     width: 90%;
-  }
+  } */
 
   .loggedPageBody {
     width: 100%;
@@ -236,9 +236,9 @@ div {
     margin: 0;
   }
 
-  .signupForm {
+  /* .signupForm {
     width: 90%;
-  }
+  } */
 
   .loggedPageBody {
     width: 100%;
@@ -749,7 +749,7 @@ div {
   background-color: white;
   height: fit-content;
   width: fit-content;
-  align-self: center;
+  justify-self: center;
 }
 
 .signupForm h2 {
